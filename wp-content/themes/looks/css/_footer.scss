@@ -2,26 +2,39 @@ footer {
     background: #222;
     color: #ccc;
     font-size: 1em;
-    padding: 2em 0 4em 0;
-    
-    .logo {
-        width: 10em;
-        margin-top: 1em;
-    }
+    padding: 2em 0 6em 0;
 
     .row {
         display: flex;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+
+            .col {
+                width: 100%;
+                padding: 1em !important;
+            }
+        }
+
     }
 
     .col {
         padding: 2em;
-        width: 33.33%;
 
         &:first-child { padding-left: 0; }
         &:last-child { padding-right: 0; }
 
         h4 {
             color: white;
+        }
+    }
+
+    .logos {
+        width: 25%;
+    
+        .logo {
+            width: 10em;
+            margin-top: 1em;
         }
     }
 
@@ -36,7 +49,7 @@ footer {
     }
 
     .directions {
-        width: 40%;
+        width: auto;
 
         img {
             width: 20em;
@@ -45,5 +58,18 @@ footer {
 
     .copyright {
         font-weight: 300;
+        text-align: center;
+        width: 100%;
+        margin-top: 2em;
+
+        .logo {
+            width: 7em;
+            margin-bottom: 0.5em;
+        }
+
+        .anko {
+            width: 5em;
+            margin-top: 1.5em;
+        }
     }
 }

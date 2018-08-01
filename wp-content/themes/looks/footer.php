@@ -1,11 +1,11 @@
 <footer>
     <div class="maxwidth row">
         
-        <div class="col">
+        <!-- <div class="col logos">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-light.svg" alt="Kapsalon Looks">
             </a>
-        </div>
+        </div> -->
 
         <div class="col contact">
             <h4>Contact</h4>
@@ -34,7 +34,18 @@
     </div>
 
     <div class="maxwidth row">
-        <div class="copyright">&copy; <?php echo date('Y'); ?> Kapsalon Looks. </div>
+        <div class="copyright">
+            
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-light.svg" alt="Kapsalon Looks">
+            </a>
+
+            <p>&copy; <?php echo date('Y'); ?> Kapsalon Looks.</p>
+
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img class="anko" src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
+            </a>
+        </div>
     </div>
 </footer>
 

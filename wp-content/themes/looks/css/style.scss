@@ -6,15 +6,16 @@ $darkblue: #07374D;
 html, body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .maxwidth {
     margin: auto;
-    max-width: 1100px;
+    max-width: 1200px;
     width: 90%;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 @import 'markup';
 @import 'header';
 @import 'footer';
+@import 'home';
