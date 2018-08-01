@@ -17,6 +17,17 @@ a {
     color: $accent;
 }
 
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1em 0;
+    padding: 0.5em 2em;
+    background: $accent;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.2em;
+}
+
 .hero {
     position: relative;
     background-size: cover;

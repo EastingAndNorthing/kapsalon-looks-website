@@ -9,7 +9,9 @@
 
         <div class="col contact">
             <h4>Contact</h4>
-            <p>U kunt het beste contact opnemen via <a href="tel:0505270449">050 - 52 70 449</a>.</p>
+            <p>Eendrachtskade NZ 1</p>
+            <p>9718 BA Groningen</p>
+            <p>U kunt het beste contact opnemen via <a href="tel:0505270449">050 - 52 70 449</a></p>
         </div>
 
         <div class="col opening-times">
@@ -42,8 +44,12 @@
 
             <p>&copy; <?php echo date('Y'); ?> Kapsalon Looks.</p>
 
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img class="anko" src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
+            <a rel="nofollow" target="_blank" href="https://www.anko.nl/">
+                <img class="brands" src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
+            </a>
+
+            <a target="_blank" href="#">
+                <img class="brands" src="<?php echo get_template_directory_uri(); ?>/img/ellen_wille.png" alt="Ellen Wille - The Hair You Love">
             </a>
         </div>
     </div>
