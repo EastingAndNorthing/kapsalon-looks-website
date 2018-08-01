@@ -25,3 +25,7 @@
 </head>
 
 <body <?php body_class() ?>>
+
+<?php if(!is_front_page()): ?>
+
+<?php endif; ?>

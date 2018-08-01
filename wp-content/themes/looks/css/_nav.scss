@@ -1,0 +1,44 @@
+.main-nav {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    text-align: right;
+    padding: 1em; 
+
+    ul.menu {
+        list-style-type: none;
+
+        li.menu-item {
+            display: inline-block;
+            font-weight: bold;
+            padding: 0 1em;
+
+            a {
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                text-decoration: none;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: translateX(0%) scaleX(1);
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    text-align: center;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    transform: translateX(-50%) scaleX(0);
+                    width: 100%;
+                    height: 0.2em;
+                    background: white;
+                    transition: all 150ms ease-in-out;
+                }
+            }
+        }
+    }
+}
