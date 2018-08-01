@@ -1,0 +1,49 @@
+footer {
+    background: #222;
+    color: #ccc;
+    font-size: 1em;
+    padding: 2em 0 4em 0;
+    
+    .logo {
+        width: 10em;
+        margin-top: 1em;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        padding: 2em;
+        width: 33.33%;
+
+        &:first-child { padding-left: 0; }
+        &:last-child { padding-right: 0; }
+
+        h4 {
+            color: white;
+        }
+    }
+
+    .contact {
+        width: 25%;
+
+        a { white-space: nowrap; }
+    }
+
+    .opening-times {
+        width: 20%;
+    }
+
+    .directions {
+        width: 40%;
+
+        img {
+            width: 20em;
+        }
+    }
+
+    .copyright {
+        font-weight: 300;
+    }
+}
