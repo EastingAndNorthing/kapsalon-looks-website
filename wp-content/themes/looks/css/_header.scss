@@ -13,8 +13,8 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: #222;
-        opacity: 0.8;
+        background: #07374D;
+        opacity: 0.9;
     }
 
     &.dark {
@@ -26,8 +26,8 @@
 
         .main-nav {
             a {
-                color: #222;
-                &::after { background: #222 }
+                color: #222 !important;
+                &::after { background: #222 !important }
             }
         }
     }
