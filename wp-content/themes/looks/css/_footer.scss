@@ -49,11 +49,32 @@ footer {
         flex-grow: 1;
     }
 
+    .mabel-bhi-businesshours {
+        text-transform: capitalize;
+
+        .mbhi-is-current {
+            color: white;
+        }
+
+        td {
+            padding-right: 0.6em;
+            padding-bottom: 0.6em;
+        }
+    }
+
     .directions {
         width: auto;
 
-        img {
+        iframe {
             width: 20em;
+            height: 15em;
+        }
+
+        @media screen and (max-width: 480px) {
+            iframe {
+                width: 100%;
+                height: 12em;
+            }
         }
     }
 

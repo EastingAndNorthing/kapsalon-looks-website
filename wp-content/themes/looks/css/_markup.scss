@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+img {
+    max-width: 100%;
+    align-self: center;
+}
+
 p, ul, ol {
     line-height: 1.8;
     margin: 0.5em 0;
@@ -28,10 +33,14 @@ a {
     border-radius: 0.2em;
 }
 
-.prettyprint {
+.readable {
     max-width: 40em;
+}
+
+.prettyprint {
     padding: 3em 0;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
 
     h1 {
         font-size: 1.6em;
@@ -46,13 +55,23 @@ a {
     p {
         color: #666;
         font-size: 1.1em;
+        font-weight: 300;
         line-height: 2;
+        margin: 1em 0;
     }
 
     img {
         margin: 1em;
         max-width: 9em;
         height: auto;
+
+        &.aligncenter {
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            clear: both;
+        }
         
         &.alignright {
             float: right;
@@ -64,6 +83,13 @@ a {
             float: left;
             margin-left: 0;
             margin-top: 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            &.alignright, 
+            &.alignleft {
+                max-width: 5em;
+            }
         }
     }
 }

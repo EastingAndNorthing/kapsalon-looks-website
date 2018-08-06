@@ -35,6 +35,17 @@
     .content {
         position: relative;
         z-index: 10;
-        padding: 8em 0 10em 0;
+        padding: 2em 0 4em 0;
+
+        .logo { width: 20em; }
+
+        .fancy { font-size: 1.6em; }
+
+        @media screen and (max-width: 480px) {
+            text-align: center;
+
+            .logo { width: 15em; }
+            .fancy { font-size: 1.4em; }
+        }
     }
 }

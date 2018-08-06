@@ -15,22 +15,25 @@
         </div>
 
         <div class="col opening-times">
+
             <h4>Openingstijden</h4>
-            <?php $days = array('ma', 'di', 'wo', 'do', 'vr', 'za', 'zo'); //echo date('N'); ?>
+            <?php echo do_shortcode('[mbhi_hours location="Kapsalon Looks"]'); ?>
+            
+            <!-- <?php $days = array('ma', 'di', 'wo', 'do', 'vr', 'za', 'zo'); //echo date('N'); ?>
             <p>ma gesloten</p>
             <p>di 09:00 - 18:00</p>
             <p>wo 09:00 - 18:00</p>
             <p>do 09:00 - 18:00</p>
             <p>vr 09:00 - 18:00</p>
             <p>za 09:00 - 18:00</p>
-            <p>zo gesloten</p>
+            <p>zo gesloten</p> -->
         </div>
 
         <div class="col directions">
             <h4>Routebeschrijving</h4>
             <p>Kapsalon Looks is goed bereikbaar en ligt nabij Q-Park Westerhaven.</p>
             <p>De Eendrachtskade voert maximaal 2 uur (betaald) parkeren.</p>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/directions.png" alt="Routebeschrijving">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1194.5968731165447!2d6.5542943583690825!3d53.21437439498788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd4c6b8fa0a1%3A0xb1f4006f17c9fed7!2sKapsalon+Looks!5e0!3m2!1sen!2snl!4v1533558109348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
     </div>
