@@ -63,13 +63,9 @@ footer {
         width: 100%;
         margin-top: 2em;
 
-        p {
-            margin-bottom: 3em;
-        }
-
-        a {
-            color: transparent;
-        }
+        // p {
+        //     margin-bottom: 3em;
+        // }
 
         .logo {
             width: 10.5em;
@@ -77,8 +73,12 @@ footer {
         }
 
         .brands {
-            width: 5em;
-            margin: 0.6em;
+            color: transparent;
+
+            img {
+                width: 5em;
+                margin: 0.6em;
+            }
         }
     }
 }

@@ -44,12 +44,14 @@
 
             <p>&copy; <?php echo date('Y'); ?> Kapsalon Looks.</p>
 
-            <a rel="nofollow" target="_blank" href="https://www.anko.nl/">
-                <img class="brands" src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
+            <p><a target="_blank" href="https://www.anko.nl/data/consumenten/algemene-voorwaarden-voor-uv-branches-1.pdf">Algemene voorwaarden UV-branche</a></p>
+
+            <a class="brands" rel="nofollow" target="_blank" href="https://www.anko.nl/">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
             </a>
 
-            <a target="_blank" href="#">
-                <img class="brands" src="<?php echo get_template_directory_uri(); ?>/img/ellen_wille.png" alt="Ellen Wille - The Hair You Love">
+            <a class="brands" target="_blank" href="javascript:void(0);">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ellen_wille.png" alt="Ellen Wille - The Hair You Love">
             </a>
         </div>
     </div>
