@@ -22,6 +22,19 @@ a {
     color: $accent;
 }
 
+.handwriting {
+    font-family: 'Nothing You Could Do', cursive;
+    letter-spacing: -0.1em;
+}
+
+.capitalize {
+    text-transform: uppercase;    
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
