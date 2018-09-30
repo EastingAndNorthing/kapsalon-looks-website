@@ -17,12 +17,12 @@
 
         <!-- <h1><?php the_title(); ?></h1> -->
 
-        <div class="models">
+        <!-- <div class="models">
             <img class="model" src="<?php echo get_template_directory_uri(); ?>/img/models/power.jpg">
             <img class="model" src="<?php echo get_template_directory_uri(); ?>/img/models/steve.jpg">
             <img class="model" src="<?php echo get_template_directory_uri(); ?>/img/models/perucci.jpg">
             <img class="model" src="<?php echo get_template_directory_uri(); ?>/img/models/roger.jpg">
-        </div>
+        </div> -->
 
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
