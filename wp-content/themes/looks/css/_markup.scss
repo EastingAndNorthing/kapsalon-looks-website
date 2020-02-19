@@ -27,6 +27,17 @@ a {
     letter-spacing: -0.1em;
 }
 
+.condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+
+.larger {
+    font-size: 1.2em;
+}
+
 .capitalize {
     text-transform: uppercase;    
 }
@@ -70,6 +81,7 @@ a {
     }
 
     p {
+        @media screen and (max-width: 640px) { font-size: 0.95em; }
         color: #666;
         font-size: 1.1em;
         font-weight: 300;
@@ -108,5 +120,16 @@ a {
                 max-width: 5em;
             }
         }
+    }
+}
+
+.white {
+    color: white;
+
+    > div,
+    > p,
+    > h1,
+    > h2, {
+        color: white;
     }
 }

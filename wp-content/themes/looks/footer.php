@@ -1,32 +1,20 @@
 <footer>
     <div class="maxwidth row">
-        
-        <!-- <div class="col logos">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-light.svg" alt="Kapsalon Looks">
-            </a>
-        </div> -->
 
         <div class="col contact">
             <h4>Contact</h4>
             <p>Eendrachtskade NZ 1</p>
             <p>9718 BA Groningen</p>
-            <p>U kunt het beste contact opnemen via <a href="tel:0505270449">050 - 52 70 449</a></p>
+            <p>U kunt het beste contact opnemen via <a href="tel:0505270449">050 - 52 70 449</a>.</p>
+            
+            <div class="socials">
+                <a rel="nofollow" target="_blank" href="https://www.facebook.com/LOOKS-Kapsalon-Haarwerken-378411676334149/"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/fb.svg"></a>
+            </div>
         </div>
 
         <div class="col opening-times">
-
             <h4>Openingstijden</h4>
             <?php echo do_shortcode('[mbhi_hours location="Kapsalon Looks"]'); ?>
-            
-            <!-- <?php $days = array('ma', 'di', 'wo', 'do', 'vr', 'za', 'zo'); //echo date('N'); ?>
-            <p>ma gesloten</p>
-            <p>di 09:00 - 18:00</p>
-            <p>wo 09:00 - 18:00</p>
-            <p>do 09:00 - 18:00</p>
-            <p>vr 09:00 - 18:00</p>
-            <p>za 09:00 - 18:00</p>
-            <p>zo gesloten</p> -->
         </div>
 
         <div class="col directions">
@@ -42,19 +30,23 @@
         <div class="copyright">
             
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-light.svg" alt="Kapsalon Looks">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-l.svg" alt="Kapsalon Looks">
             </a>
 
             <p>&copy; <?php echo date('Y'); ?> Kapsalon Looks.</p>
 
-            <p><a target="_blank" href="https://www.anko.nl/data/consumenten/algemene-voorwaarden-voor-uv-branches-1.pdf">Algemene voorwaarden UV-branche</a></p>
+            <p><a target="_blank" rel="nofollow" href="https://www.anko.nl/data/pdf-documenten/algemene-voorwaarden-uv-2018.pdf">Algemene voorwaarden UV-branche</a></p>
 
             <a class="brands" rel="nofollow" target="_blank" href="https://www.anko.nl/">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/anko.svg" alt="Anko">
             </a>
 
-            <a class="brands" target="_blank" href="javascript:void(0);">
+            <a class="brands" href="javascript:void(0);">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ellen_wille.png" alt="Ellen Wille - The Hair You Love">
+            </a>
+            <br>
+            <a class="brands vandermolen" rel="nofollow" target="_blank" href="http://jhvandermolen.nl/">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/vandermolen.png" alt="J.H. van der Molen Fotografie">
             </a>
         </div>
     </div>

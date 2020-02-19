@@ -4,6 +4,8 @@ function theme_enqueue_scripts() {
     wp_enqueue_script( 'looks_scripts', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), null, true );
     wp_enqueue_style( 'looks_styles', get_template_directory_uri() . '/css/style.css' );
 
+    wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/jquery.fancybox.pack.js', array( 'jquery' ), null, true );
+
     wp_enqueue_script( 'swipebox', get_template_directory_uri() . '/js/swipebox/src/js/jquery.swipebox.min.js', array( 'jquery' ), null, true );
     wp_enqueue_style( 'swipebox_styles', get_template_directory_uri() . '/js/swipebox/src/css/swipebox.min.css' );
 }

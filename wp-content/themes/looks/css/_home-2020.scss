@@ -1,0 +1,204 @@
+.landing-home-2020 {
+    #start {
+        padding: 2em;
+
+        @media screen and (max-width: 1024px) {
+            flex-wrap: wrap;
+            padding: 1em;
+        }
+
+        .col {
+            width: 34%;
+            
+            @media screen and (max-width: 1024px) {
+                width: 50% !important;
+            }
+            
+            &:first-child {
+                width: 40%;
+                @media screen and (max-width: 1200px) {
+                    width: 50% !important;
+                }
+                @media screen and (max-width: 1024px) {
+                    width: 100% !important;
+                }
+            }
+
+
+            > div { border-bottom: 1px solid #C4C4C4; }
+        }
+    }
+
+    .intro {
+        .profile {
+            display: flex;
+            align-items: flex-start;
+
+            img.geert {
+                align-self: flex-start;
+                width: 130px;
+                margin-left: 0;
+                margin-top: 0.5em;
+                border-radius: 0.5em;
+                @media screen and (max-width: 900px) { width: 100px; }
+            }
+
+            p { margin-top: 0; }
+        }
+
+        .anko-logo {
+            @media screen and (max-width: 1024px) {
+                width: 15vw;
+            }
+            position: absolute;
+            width: 9vw;
+            bottom: 0.5em;
+            right: 0.5em;
+            margin: 0;
+        }
+    }
+
+    .intro-nav {
+        .preview {
+            display: block;
+            padding-bottom: 72%;
+            background-size: cover;
+            background-position: center;
+            
+            @media screen and (max-width: 1024px) {
+                padding-bottom: 45%;
+            }
+        }
+
+        h2 {
+            margin: 1em 0 -0.4em 0;
+        }
+    }
+
+
+
+    #haarwerken {
+        .content {
+            max-width: 1400px;
+            margin: auto;
+            padding: 0 6%;
+
+            .columns {
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    color: white;
+                    width: 50%;
+                    padding: 0 1em;
+                    @media screen and (max-width: 800px) {
+                        width: 100%;
+                    }
+                }
+
+                i {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+    
+
+
+    #haarwerken-steps {
+        .step {
+            display: flex;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 1024px) {
+                hr { display: none; }
+                &:last-child hr {
+                    display: block;
+                }
+            }
+
+            .thumbnail {
+                display: block;
+                position: relative;
+                width: 35%;
+                background-position: center;
+                background-size: cover;
+                &::after { opacity: 0.7; }
+
+                @media screen and (max-width: 1024px) {
+                    width: 100%;
+                    align-self: flex-start;
+                    padding-bottom: 30%;
+                    margin-top: 2em;
+                }
+
+                .number {
+                    position: absolute;
+                    z-index: 10;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-size: 6em;
+                    font-family: "Roboto Condensed", sans-serif;
+                    font-weight: bold;
+                    @media screen and (max-width: 1024px) {
+                        left: 1.5rem;
+                        transform: translate(0, -50%);
+                    }
+                }
+            }
+            .content {
+                position: relative;
+                align-self: flex-start;
+                width: 65%;
+                min-height: 500px;
+                padding: 1em 2em;
+                padding-bottom: 0;
+
+                @media screen and (max-width: 1024px) {
+                    width: 100%;
+                    min-height: auto;
+
+                    h2 { margin-top: 0.7em; }
+                }
+
+                .anko-vergelijker img {
+                    margin-left: 0;
+                }
+
+                hr {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% - 4em);
+                    margin: 0;
+                    border: none;
+                    border-bottom: 1px solid #C4C4C4;
+                    
+                }
+            }
+        }
+    }
+    
+    
+    #klachten {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p { margin: 0 1em; }
+
+        img { width: 9em; }
+
+        @media screen and (max-width: 900px) {
+            flex-wrap: wrap; 
+            p { width: 100%; }
+            .anko-logo { order: 1; }
+            img { width: 100px; }
+        }
+    }
+}

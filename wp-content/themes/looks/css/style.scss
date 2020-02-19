@@ -21,11 +21,58 @@ html, body {
     width: 90%;
 }
 
+.flex-row {
+    position: relative;
+    display: flex;
+    margin: 0 -0.75em;
+
+    .col {
+        position: relative;
+        padding: 0.75em;
+        width: 33%;
+
+        > div {
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 0 0.4em;
+
+        .col { padding: 0.4em; }
+    }
+}
+
+.overlay-blue {
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+
+    > div {
+        position: relative;
+        z-index: 10;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+        background: $darkblue;
+        opacity: 0.85;
+    }
+}
+
 @import 'markup';
 @import 'nav';
 @import 'header';
 @import 'footer';
 @import 'home';
+@import 'home-2020';
 @import 'modellenboek';
 
 

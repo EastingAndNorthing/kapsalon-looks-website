@@ -24,19 +24,20 @@
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-
 	gtag('config', 'UA-129028674-1');
 	</script>
 
+	<link href="https://www.zorgvergoedingcheck.nl/assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
 
     <script type="text/javascript">var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';</script>
 	
     <?php wp_head(); ?>
 
+	<?php if(isset($_GET['refresh'])): ?>
+		<meta http-equiv="refresh" content="5">
+	<?php endif; ?>
+
 </head>
 
 <body <?php body_class() ?>>
 
-<?php if(!is_front_page()): ?>
-
-<?php endif; ?>

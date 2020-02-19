@@ -44,6 +44,12 @@ footer {
         a { white-space: nowrap; }
     }
 
+    .socials {
+        img {
+            width: 2em;
+        }
+    }
+
     .opening-times {
         // width: 20%;
         flex-grow: 1;
@@ -99,6 +105,10 @@ footer {
             img {
                 width: 5em;
                 margin: 0.6em;
+            }
+
+            &.vandermolen img {
+                width: 200px;
             }
         }
     }
