@@ -94,10 +94,16 @@ namespace MABEL_BHI_LITE\Services
 						foreach($raw_holiday->Hours as $hour)
 						{
 							if($hour->From == 0 || $hour->To == 0) continue;
-							array_push( $holiday->opening_hours, new Opening_Hours(
-								DateTime_Service::getInstance()->toDateTime( $raw_holiday->Day, $raw_holiday->Month, $hour->From, $hour->FromIndication ),
-								DateTime_Service::getInstance()->toDateTime( $raw_holiday->Day, $raw_holiday->Month, $hour->To, $hour->ToIndication )
-							) );
+							$start_time = DateTime_Service::getInstance()->toDateTime( $raw_holiday->Day, $raw_holiday->Month, $hour->From, $hour->FromIndication );
+							$end_time = DateTime_Service::getInstance()->toDateTime( $raw_holiday->Day, $raw_holiday->Month, $hour->To, $hour->ToIndication );
+							$after_midnight = false;
+							if($end_time <= $start_time) {
+								$after_midnight = true;
+								$end_time = DateTime_Service::getInstance()->addDays($end_time,1);
+							}
+							$hrs = new Opening_Hours($start_time,$end_time);
+							$hrs->after_midnight = $after_midnight;
+							array_push( $holiday->opening_hours, $hrs);
 						}
 					}
 					array_push($location->specials,$holiday);

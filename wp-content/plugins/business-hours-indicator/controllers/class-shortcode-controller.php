@@ -201,7 +201,7 @@ namespace MABEL_BHI_LITE\Controllers
 				Opening_Hours_Service::instance()->get_next_opening_time($location);
 
 			if($next_hours === null)
-				return __('Please enter your opening times in the settings', $this->slug);
+				return __('Please enter your opening times in the settings', 'business-hours-indicator');
 
 			$difference = DateTime_Service::getInstance()->get_difference($next_hours,DateTime_Service::getInstance()->getNow()) + 60;
 
@@ -220,7 +220,7 @@ namespace MABEL_BHI_LITE\Controllers
 		{
 			$consolidated = array();
 			$consolidated_row = array();
-			$closed = __('Closed', $this->slug);
+			$closed = __('Closed', 'business-hours-indicator');
 
 			foreach($sets as $set)
 			{
@@ -252,8 +252,8 @@ namespace MABEL_BHI_LITE\Controllers
 				$base_set = $consolidated_row[0];
 				$size = sizeof($consolidated_row);
 				$day_range = ($size > 1) ?
-					__($base_set->day_name, $this->slug) . ' - ' . __($consolidated_row[$size - 1]->day_name, $this->slug) :
-					__($base_set->day_name, $this->slug);
+					__($base_set->day_name, 'business-hours-indicator') . ' - ' . __($consolidated_row[$size - 1]->day_name, 'business-hours-indicator') :
+					__($base_set->day_name, 'business-hours-indicator');
 
 				$entry = new List_VM_Entry();
 				$entry->range =  $day_range;
@@ -273,8 +273,8 @@ namespace MABEL_BHI_LITE\Controllers
 			foreach($sets as $set)
 			{
 				$entry = new List_VM_Entry();
-				$entry->range =  __($set->day_name, $this->slug);
-				$entry->hours = $set->is_closed() ? __('Closed', $this->slug) : $set->opening_hours[0]->to_string($time_format);
+				$entry->range =  __($set->day_name, 'business-hours-indicator');
+				$entry->hours = $set->is_closed() ? __('Closed', 'business-hours-indicator') : $set->opening_hours[0]->to_string($time_format);
 				$entry->current = $set->is_today;
 				array_push($entries, $entry);
 			}
@@ -289,13 +289,13 @@ namespace MABEL_BHI_LITE\Controllers
 
 			$sorted_specials = Enumerable::from($location->specials)->orderBy(function($x){return $x->date;})->toArray();
 
-			$closed = __('Closed', $this->slug);
+			$closed = __('Closed', 'business-hours-indicator');
 			foreach($sorted_specials as $special) {
 				$entry = new List_VM_Entry();
 				$entry->range = sprintf(
 					'%s %s',
 					$special->date->format('j'),
-					__($special->date->format('M'), $this->slug)
+					__($special->date->format('M'), 'business-hours-indicator')
 				);
 				$entry->hours = $special->is_closed() ? $closed : $special->opening_hours[0]->to_string($time_format);
 				$entry->current = $special->is_today;
@@ -342,9 +342,9 @@ namespace MABEL_BHI_LITE\Controllers
 				$entry->range = sprintf(
 					'%s %s - %s %s',
 					$vacation->from->format('j'),
-					__($vacation->from->format('M'), $this->slug),
+					__($vacation->from->format('M'), 'business-hours-indicator'),
 					$vacation->to->format('j'),
-					__($vacation->to->format('M'), $this->slug)
+					__($vacation->to->format('M'), 'business-hours-indicator')
 				);
 				$entry->current = $vacation->spans_today;
 				array_push($entries,$entry);

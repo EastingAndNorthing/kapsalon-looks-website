@@ -44,11 +44,11 @@ namespace MABEL_BHI_LITE\Controllers
 
 		private function init_admin_page()
 		{
-			$this->options_manager->add_section('general', __('General',$this->slug), 'admin-tools', true);
-			$this->options_manager->add_section('hours', __('Hours',$this->slug), 'clock');
-			$this->options_manager->add_section('indicator', __('Indicator',$this->slug), 'arrow-down-alt');
-			$this->options_manager->add_section('table', __('Table',$this->slug), 'editor-table');
-			$this->options_manager->add_section('codes', __('Codes',$this->slug),'editor-code');
+			$this->options_manager->add_section('general', __('General','business-hours-indicator'), 'admin-tools', true);
+			$this->options_manager->add_section('hours', __('Hours','business-hours-indicator'), 'clock');
+			$this->options_manager->add_section('indicator', __('Indicator','business-hours-indicator'), 'arrow-down-alt');
+			$this->options_manager->add_section('table', __('Table','business-hours-indicator'), 'editor-table');
+			$this->options_manager->add_section('codes', __('Codes','business-hours-indicator'),'editor-code');
 
 			$timezones = DateTimeZone::listIdentifiers(DateTimeZone::ALL);
 			$locations = Settings_Manager::get_setting('locations');
@@ -56,7 +56,7 @@ namespace MABEL_BHI_LITE\Controllers
 			$this->options_manager->add_dropdown_option(
 				'general',
 				'timezone',
-				__('Time zone',$this->slug),
+				__('Time zone','business-hours-indicator'),
 				array_combine($timezones,$timezones),
 				Settings_Manager::get_setting('timezone')
 			);
@@ -64,14 +64,14 @@ namespace MABEL_BHI_LITE\Controllers
 			$this->options_manager->add_dropdown_option(
 				'general',
 				'format',
-				__('Time format',$this->slug),
-				array(12 => __('12-hour format',$this->slug), 24 => __('24-hour format',$this->slug)),
+				__('Time format','business-hours-indicator'),
+				array(12 => __('12-hour format','business-hours-indicator'), 24 => __('24-hour format','business-hours-indicator')),
 				Settings_Manager::get_setting('format')
 			);
 
 			$this->options_manager->add_custom_option(
 				'hours',
-				__('Locations',$this->slug),
+				__('Locations','business-hours-indicator'),
 				'admin/views/locations.php',
 				array('locations' => json_decode($locations))
 			);
@@ -79,118 +79,118 @@ namespace MABEL_BHI_LITE\Controllers
 			$this->options_manager->add_text_option(
 				'indicator',
 				'openline',
-				__('Now open message',$this->slug),
+				__('Now open message','business-hours-indicator'),
 				Settings_Manager::get_translated_setting('openline'),
 				null,
-				__('HTML is allowed.',$this->slug)
+				__('HTML is allowed.','business-hours-indicator')
 			);
 
 			$this->options_manager->add_text_option(
 				'indicator',
 				'closedline',
-				__('Now closed message', $this->slug),
+				__('Now closed message', 'business-hours-indicator'),
 				Settings_Manager::get_translated_setting('closedline'),
 				null,
-				__('HTML is allowed.',$this->slug)
+				__('HTML is allowed.','business-hours-indicator')
 			);
 
 			$this->options_manager->add_checkbox_option(
 				'indicator',
 				'includetime',
-				__('Include time', $this->slug),
-				__('Include the current time in the output.', $this->slug),
+				__('Include time', 'business-hours-indicator'),
+				__('Include the current time in the output.', 'business-hours-indicator'),
 				Settings_Manager::get_setting('includetime')
 			);
 
 			$this->options_manager->add_checkbox_option(
 				'indicator',
 				'includeday',
-				__('Include day', $this->slug),
-				__('Include the current day in the output.'),
+				__('Include day', 'business-hours-indicator'),
+				__('Include the current day in the output.','business-hours-indicator'),
 				Settings_Manager::get_setting('includeday')
 			);
 
 			$this->options_manager->add_checkbox_option(
 				'indicator',
 				'approximation',
-				__('Opening/closing soon warning', $this->slug),
-				__('When it\'s near opening or closing time, show a different message.', $this->slug),
+				__('Opening/closing soon warning', 'business-hours-indicator'),
+				__('When it\'s near opening or closing time, show a different message.', 'business-hours-indicator'),
 				Settings_Manager::get_setting('approximation')
 			);
 
 			$this->options_manager->add_text_option(
 				'indicator',
 				'opensoonline',
-				__('Opening soon message',$this->slug),
+				__('Opening soon message','business-hours-indicator'),
 				Settings_Manager::get_translated_setting('opensoonline'),
 				null,
-				__('HTML is allowed. Use {x} to denote minutes.',$this->slug),
+				__('HTML is allowed. Use {x} to denote minutes.','business-hours-indicator'),
 				new Option_Dependency('approximation','true')
 			);
 
 			$this->options_manager->add_text_option(
 				'indicator',
 				'closedsoonline',
-				__('Closing soon message', $this->slug),
+				__('Closing soon message', 'business-hours-indicator'),
 				Settings_Manager::get_translated_setting('closedsoonline'),
 				null,
-				__('HTML is allowed. Use {x} to denote minutes.',$this->slug),
+				__('HTML is allowed. Use {x} to denote minutes.','business-hours-indicator'),
 				new Option_Dependency('approximation','true')
 			);
 
 			$this->options_manager->add_dropdown_option(
 				'indicator',
 				'warning',
-				__('Opening soon warning', $this->slug),
+				__('Opening soon warning', 'business-hours-indicator'),
 				array(15 => 15, 30 => 30, 45 => 45),
 				Settings_Manager::get_setting('warning'),
 				null,
 				new Option_Dependency('approximation', 'true'),
-				__("Show 'opening soon' warning ", $this->slug),
-				__('minutes in advance.', $this->slug)
+				__("Show 'opening soon' warning ", 'business-hours-indicator'),
+				__('minutes in advance.', 'business-hours-indicator')
 			);
 
 			$this->options_manager->add_dropdown_option(
 				'indicator',
 				'warningclosing',
-				__('Closing soon warning', $this->slug),
+				__('Closing soon warning', 'business-hours-indicator'),
 				array(15 => 15, 30 => 30, 45 => 45),
 				Settings_Manager::get_setting('warningclosing'),
 				null,
 				new Option_Dependency('approximation', 'true'),
-				__("Show 'closing soon' warning ", $this->slug),
-				__('minutes in advance.', $this->slug)
+				__("Show 'closing soon' warning ", 'business-hours-indicator'),
+				__('minutes in advance.', 'business-hours-indicator')
 			);
 
 			$this->options_manager->add_dropdown_option(
 				'table',
 				'tabledisplaymode',
-				__('Display mode', $this->slug),
-				array( 0 => __('Normal', $this->slug) , 1 => __('Consolidated', $this->slug) ),
+				__('Display mode', 'business-hours-indicator'),
+				array( 0 => __('Normal', 'business-hours-indicator') , 1 => __('Consolidated', 'business-hours-indicator') ),
 				Settings_Manager::get_setting('tabledisplaymode')
 			);
 
 			$this->options_manager->add_dropdown_option(
 				'table',
 				'output',
-				__('Output', $this->slug),
-				array( 1 => __('Table',$this->slug) , 2 => __('Inline',$this->slug) ),
+				__('Output', 'business-hours-indicator'),
+				array( 1 => __('Table','business-hours-indicator') , 2 => __('Inline','business-hours-indicator') ),
 				Settings_Manager::get_setting('output')
 			);
 
 			$this->options_manager->add_checkbox_option(
 				'table',
 				'includespecialdates',
-				__('Include holidays', $this->slug),
-				__('Add holidays to the hours table.', $this->slug),
+				__('Include holidays', 'business-hours-indicator'),
+				__('Add holidays to the hours table.', 'business-hours-indicator'),
 				Settings_Manager::get_setting('includespecialdates')
 			);
 
 			$this->options_manager->add_checkbox_option(
 				'table',
 				'includevacations',
-				__('Include vacations', $this->slug),
-				__('Add vacations to the hours table.', $this->slug),
+				__('Include vacations', 'business-hours-indicator'),
+				__('Add vacations to the hours table.', 'business-hours-indicator'),
 				Settings_Manager::get_setting('includevacations')
 			);
 

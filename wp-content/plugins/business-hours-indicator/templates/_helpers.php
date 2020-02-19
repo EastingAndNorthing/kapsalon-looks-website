@@ -47,7 +47,7 @@ if(! function_exists(__NAMESPACE__ . '\render_vacations'))
 				$main_html,
 				$entry->current && $show_current ? ' mbhi-is-current' : '',
 				$entry->range,
-				__( 'Closed', $slug )
+				__( 'Closed', 'business-hours-indicator' )
 			);
 		}
 	}

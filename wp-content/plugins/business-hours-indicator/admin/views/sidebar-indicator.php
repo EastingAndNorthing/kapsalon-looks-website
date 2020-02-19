@@ -1,8 +1,8 @@
 <div class="panel">
-	<h3 class="t-u t-c"><?php _e('Example',\MABEL_BHI_LITE\Core\Config_Manager::$slug) ?></h3>
+	<h3 class="t-u t-c"><?php _e('Example','business-hours-indicator'); ?></h3>
 	<div class="p-t-3 example example-indicator">
 		<div class="t-c">
-			Fetching...
+			<?php _e('Fetching...','business-hours-indicator');?>
 		</div>
 	</div>
 </div>

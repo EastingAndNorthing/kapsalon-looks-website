@@ -3,8 +3,8 @@ Contributors: maartenbelmans, studiowombat
 Donate link: https://www.paypal.me/maartenbelmans
 Tags: business hours, opening times, opening hours, open indication, currently open, business hours overview, indicator, closed, open times, closing times
 Requires at least: 3.7
-Tested up to: 4.9.7
-Stable tag: 2.1.7
+Tested up to: 5.3.1
+Stable tag: 2.2.6
 Requires PHP: 5.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +24,8 @@ Display opening hours and if you're currently open/closed, with countdown to nex
 * Supports countdown until your next opening/closing time
 * Supports multiple locations
 * Developer API (more info below)
-* Translated in NL, GR, EN, DE, ES, IT, FR, BG, SE, SK, SL
+* Frontend translated in: Dutch, German, English, Greek, Spanish, Italian, French, Bulgarian, Swedish, Danish,
+Slovakian, Slovenian, Lithuanian, Croatian, Russian, Czech, Norwegian, Finnish, Icelandic.
 * beautiful & user-friendly settings screens for you, or your client, to work in
 
 Check out a complete list of features below.
@@ -54,7 +55,8 @@ Check out a complete list of features below.
 * Include special hours such as holidays
 * Include vacation hours
 * Highlight the current day
-* Frontend translated in: NL, GR, EN, DE, ES, IT, FR, BG, SE, SK, SL
+* Frontend translated in: Dutch, German, English, Greek, Spanish, Italian, French, Bulgarian, Swedish, Danish,
+Slovakian, Slovenian, Lithuanian, Croatian, Russian, Czech, Norwegian, Finnish, Icelandic.
 
 = Displaying opening times =
 
@@ -139,6 +141,36 @@ find all classes [here](https://studiowombat.com/knowledge-base/styling-the-outp
 4. Example of how it could look like on the frontend.
 
 == Changelog ==
+
+= version 2.2.6 =
+ * Update: Opening times are now selectable with 5 minute intervals instead of 15-minute intervals.
+
+= version 2.2.5 =
+ * Fix: fixed a bug in the admin settings screen when location names are numbers.
+ * Fix: Italian translation typo.
+
+= version 2.2.4 =
+ * Added: New translations for Portuguese and Brazilian Portuguese.
+
+= version 2.2.3 =
+ * Added: Icelandic language.
+
+= version 2.2.2 =
+ * Fix: fixed a bug with wrong "open" indication for holidays going past midnight.
+
+= version 2.2.1 =
+ * Update: better translation compatibility.
+ * Added: Swiss High German language.
+
+= version 2.2.0 =
+ * Added: Finnish translations.
+
+= version 2.1.9 =
+* Added: Norwegian translations.
+
+= version 2.1.8 =
+ * Added: Croation translations.
+ * Added: Lithuanian translations.
 
 = version 2.1.7 =
  * Added: added NL_BE language.

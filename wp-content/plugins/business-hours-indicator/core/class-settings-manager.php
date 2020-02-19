@@ -46,7 +46,7 @@ namespace MABEL_BHI_LITE\Core
 				return null;
 
 			if(isset(self::$defaults[$key]))
-				return __(self::$defaults[$key], Config_Manager::$slug);
+				return __(self::$defaults[$key], 'business-hours-indicator');
 
 			return null;
 		}

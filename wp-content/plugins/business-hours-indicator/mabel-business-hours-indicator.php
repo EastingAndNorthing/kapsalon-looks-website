@@ -3,7 +3,7 @@
  * Plugin Name: Business Hours Indicator
  * Plugin URI: https://businesshourplugin.maartenbelmans.com/
  * Description: Add an indication of being currently open or closed. Show business hour tables.  Conditional logic: show/hide content only when open/closed.
- * Version: 2.1.7
+ * Version: 2.2.6
  * Author: Maarten Belmans
  * Author URI: https://maartenbelmans.com/
  * Text Domain: business-hours-indicator
@@ -49,8 +49,7 @@ if(!function_exists('MBHILITE'))
 	}
 }
 
-function run_mabel_bhi_lite()
-{
+function run_mabel_bhi_lite() {
 	// todo, this can probably go? Not sure why I left it here ^^
 	if (!defined('MABEL_BHI_LITE_SETTINGS'))
 		define('MABEL_BHI_LITE_SETTINGS', 'mb-bhi-settings');
@@ -59,7 +58,7 @@ function run_mabel_bhi_lite()
 		plugin_dir_url( __FILE__ ),
 		plugin_basename( __FILE__ ),
 		'Business Hours Indicator',
-		'2.1.7'
+		'2.2.6'
 	);
 
 	$plugin->run();

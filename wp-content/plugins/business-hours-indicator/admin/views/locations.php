@@ -7,25 +7,25 @@ if(!defined('ABSPATH')){die;}
 
 	<div id="add-location" style="display:none;">
 		<p>
-			The location name should be unique.
+			<?php _e('The location name should be unique','business-hours-indicator');?>.
 		</p>
 		<table class="form-table">
 			<tr>
-				<th scope="row">Name</th>
+				<th scope="row"><?php _e('Name','business-hours-indicator');?></th>
 				<td>
 					<input type="text" name="loc-name" maxlength="50" class="skip-save"  />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row" colspan="2">
-					<a href="#" class="btn-add-loc mabel-btn">Add</a>
+					<a href="#" class="btn-add-loc mabel-btn"><?php _e('Add','business-hours-indicator');?></a>
 				</th>
 			</tr>
 		</table>
 	</div>
 
 	<div id="add-hours" style="display:none;">
-		<p>When you're closed on a certain day, just leave the hours blank.<br/>Remember: 12PM is midday, 12AM is midnight.</p>
+		<p><?php _e("When you're closed on a certain day, just leave the hours blank.<br/>Remember: 12PM is midday, 12AM is midnight.",'business-hours-indicator');?></p>
 		<table class="form-table table-hours">
 			<tbody class="add-hours-table">
 
@@ -33,12 +33,13 @@ if(!defined('ABSPATH')){die;}
 		</table>
 
 		<div class="modal-button-row">
-			<a href="#" class="btn-edit-hours mabel-btn">Done</a>
+			<a href="#" class="btn-edit-hours mabel-btn"><?php _e('Done','business-hours-indicator');?></a>
 		</div>
 	</div>
 
 	<div id="add-specials" style="display:none;">
-		<p>When you're closed on a certain day, just leave the hours blank.<br/>Remember: 12PM is midday, 12AM is midnight.</p>
+		<p>
+			<?php _e("When you're closed on a certain day, just leave the hours blank.<br/>Remember: 12PM is midday, 12AM is midnight.",'business-hours-indicator');?></p>
 
 		<div class="sd-display-wrapper">
 			<table class="form-table sd-display"></table>
@@ -48,12 +49,12 @@ if(!defined('ABSPATH')){die;}
 		<table class="form-table add-specials-table">
 		</table>
 		<div class="modal-button-row">
-			<a href="javascript:tb_remove();" class="btn-edit-specials mabel-btn">Done</a>
+			<a href="javascript:tb_remove();" class="btn-edit-specials mabel-btn"><?php _e('Done','business-hours-indicator');?></a>
 		</div>
 	</div>
 
 	<div id="add-vacation" style="display:none;">
-		<p>Denote when you're on vacation.</p>
+		<p><?php _e("Denote when you're on vacation.",'business-hours-indicator');?></p>
 		<div class="sd-display-wrapper">
 			<table class="form-table vac-display"></table>
 		</div>
@@ -61,12 +62,12 @@ if(!defined('ABSPATH')){die;}
 
 		<table class="form-table add-vacation-table"></table>
 		<div class="modal-button-row">
-			<a href="javascript:tb_remove();" class="btn-edit-vacation mabel-btn">Done</a>
+			<a href="javascript:tb_remove();" class="btn-edit-vacation mabel-btn"><?php _e('Done','business-hours-indicator');?></a>
 		</div>
 	</div>
 
 	<div class="loc-display"></div>
 </div>
 <div class="p-t-3">
-	<a href="#" class="mabel-btn btn-open-lpopup">Add location</a>
+	<a href="#" class="mabel-btn btn-open-lpopup"><?php _e('Add location','business-hours-indicator');?></a>
 </div>

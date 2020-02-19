@@ -42,21 +42,21 @@ namespace MABEL_BHI_LITE\Controllers {
 			$this->addBasicOptions($option_manager);
 			$option_manager->add_textarea_option(
 				'content',
-				__( 'Content', Config_Manager::$slug ),
+				__( 'Content', 'business-hours-indicator' ),
 				null
 			);
 
 			$widget = new Widget(
 				'bhi_widget_isclosed',
-				__('[BHI] Show only when closed', Config_Manager::$slug),
-				__('Show content only when your business is currently closed.', Config_Manager::$slug),
+				__('[BHI] Show only when closed', 'business-hours-indicator'),
+				__('Show content only when your business is currently closed.', 'business-hours-indicator'),
 				'mbhi_ifclosed',
 				$option_manager
 			);
 			add_filter('widget_bhi_widget_isclosed_show_title',array($this, 'should_show_ifclosed_title'));
 			if(sizeof($this->location_names) === 0)
 				$widget->warning = __( "No location found. Go to Settings > Business Hours Indicator to set up locations.",
-					Config_Manager::$slug );
+					'business-hours-indicator' );
 
 			register_widget($widget);
 		}
@@ -67,21 +67,21 @@ namespace MABEL_BHI_LITE\Controllers {
 			$this->addBasicOptions($option_manager);
 			$option_manager->add_textarea_option(
 				'content',
-				__( 'Content', Config_Manager::$slug ),
+				__( 'Content', 'business-hours-indicator' ),
 				null
 			);
 
 			$widget = new Widget(
 				'bhi_widget_isopen',
-				__('[BHI] Show only when open', Config_Manager::$slug),
-				__('Show content only when your business is currently open.', Config_Manager::$slug),
+				__('[BHI] Show only when open', 'business-hours-indicator'),
+				__('Show content only when your business is currently open.', 'business-hours-indicator'),
 				'mbhi_ifopen',
 				$option_manager
 			);
 			add_filter('widget_bhi_widget_isopen_show_title',array($this, 'should_show_ifopen_title'));
 			if(sizeof($this->location_names) === 0)
 				$widget->warning = __( "No location found. Go to Settings > Business Hours Indicator to set up locations.",
-					Config_Manager::$slug );
+					'business-hours-indicator' );
 
 			register_widget($widget);
 		}
@@ -101,15 +101,15 @@ namespace MABEL_BHI_LITE\Controllers {
 
 			$widget = new Widget(
 				'bhi_widget_displaybusinesshoursindicator',
-				__('[BHI] opening hours indicator', Config_Manager::$slug),
-				__('Show whether you are currently open or closed.', Config_Manager::$slug),
+				__('[BHI] opening hours indicator', 'business-hours-indicator'),
+				__('Show whether you are currently open or closed.', 'business-hours-indicator'),
 				'mbhi',
 				$option_manager
 			);
 
 			if(sizeof($this->location_names) === 0)
 				$widget->warning = __( "No location found. Go to Settings > Business Hours Indicator to set up locations.",
-					Config_Manager::$slug );
+					'business-hours-indicator' );
 
 			register_widget($widget);
 		}
@@ -122,15 +122,15 @@ namespace MABEL_BHI_LITE\Controllers {
 
 			$widget = new Widget(
 				'bhi_widget_displayopeninghours',
-				__('[BHI] opening hours overview', Config_Manager::$slug),
-				__('Show the list of opening times for a location.', Config_Manager::$slug),
+				__('[BHI] opening hours overview', 'business-hours-indicator'),
+				__('Show the list of opening times for a location.', 'business-hours-indicator'),
 				'mbhi_hours',
 				$option_manager
 			);
 
 			if(sizeof($this->location_names) === 0)
 				$widget->warning = __( "No location found. Go to Settings > Business Hours Indicator to set up locations.",
-					Config_Manager::$slug );
+					'business-hours-indicator' );
 
 			register_widget($widget);
 		}
@@ -141,13 +141,13 @@ namespace MABEL_BHI_LITE\Controllers {
 			{
 				$option_manager->add_text_option(
 					'title',
-					__( 'Title', Config_Manager::$slug ),
+					__( 'Title', 'business-hours-indicator' ),
 					null
 				);
 
 				$option_manager->add_dropdown_option(
 					'location',
-					__( 'Location', Config_Manager::$slug ),
+					__( 'Location', 'business-hours-indicator' ),
 					array_combine( $this->location_names, $this->location_names )
 				);
 			}
