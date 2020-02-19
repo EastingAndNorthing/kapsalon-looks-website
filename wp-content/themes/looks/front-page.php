@@ -192,8 +192,8 @@
 
     <section id="klachten" class="center prettyprint">
         <a class="anko-logo" href="https://www.anko.nl/consumenten/een-klacht-over-uw-kapper" target="_blank" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/img/anko_color.jpg" alt="Anko"></a>
-        <p>Heeft u een klacht? Meld deze zo spoedig mogelijk.<br>
-        Hiervoor verwijs ik naar de website van de <a target="_blank" rel="nofollow" href="https://www.anko.nl/consumenten/een-klacht-over-uw-kapper">ANKO</a> en <a target="_blank" rel="nofollow" href="https://www.degeschillencommissie.nl/">De Geschillencommissie.<a></p>
+        <p>Heeft u een klacht? Meld deze zo spoedig mogelijk bij Kapsalon Looks.<br>
+        Verder verwijs ik naar de website van de <a target="_blank" rel="nofollow" href="https://www.anko.nl/consumenten/een-klacht-over-uw-kapper">ANKO</a> en <a target="_blank" rel="nofollow" href="https://www.degeschillencommissie.nl/">De Geschillencommissie.<a></p>
         <a class="geschil-logo" href="https://www.degeschillencommissie.nl/" target="_blank" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/img/geschillencommissie-med.jpg" alt="Geschillencommissie"></a>
     </section>
 

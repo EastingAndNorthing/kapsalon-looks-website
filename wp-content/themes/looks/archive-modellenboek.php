@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<header class="hero dark" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bird.jpg')">
+<!-- <header class="hero dark" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bird.jpg')"> -->
+<header class="hero dark" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bird2.jpg')">
 
     <?php get_nav(); ?>
 
