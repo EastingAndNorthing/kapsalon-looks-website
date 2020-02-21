@@ -77,7 +77,7 @@
         
         <div class="col">
             <div class="intro-nav">
-                <a rel="gallery-3" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/puppets.jpg" class="swipebox preview haarwerken-stack"></a>
+                <a rel="gallery-3" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/2.jpg" class="swipebox preview haarwerken-stack"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/1.jpg" class="swipebox"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/2.jpg" class="swipebox"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/3.jpg" class="swipebox"></a>
