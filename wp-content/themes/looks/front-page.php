@@ -80,9 +80,10 @@
                 <a rel="gallery-3" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/puppets.jpg" class="swipebox preview haarwerken-stack"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/1.jpg" class="swipebox"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/2.jpg" class="swipebox"></a>
+                <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/3.jpg" class="swipebox"></a>
 
                 <h2 class="capitalize"><a href="#haarwerken">Haarwerken</a></h2>
-                <p>In de loop der jaren heb ik klanten gehad die geconfronteerd werden met dunner wordend haar, vroegtijdige kaalheid en vormen van tijdelijke of permanente haaruitval wegens ziekte. Haarwerken, haarstukken en pruiken bieden hiervoor een passende oplossing.</p>
+                <p>In de loop der jaren heb ik klanten gehad die geconfronteerd werden met dunner wordend haar, vroegtijdige kaalheid en vormen van tijdelijke of permanente haaruitval wegens ziekte, waaronder alopecia areata/diffusa/frontalis. Haarwerken, haarstukken en pruiken bieden hiervoor een passende oplossing.</p>
             </div>
         </div>
 
@@ -146,7 +147,7 @@
                 <p>Vervolgens ga ik voor u aan de slag om een selectie confectiehaarwerken voor u te bestellen. Tussen twee en zes werkdagen zal deze selectie voor u in de kapsalon aanwezig zijn, en maken we opnieuw een afspraak (welke ook geheel vrijblijvend en kosteloos is) voor het passen van de gemaakte selectie.
                 <br>Wanneer u een keuze heeft gemaakt, zorg ik ervoor dat uw haarwerk goed aansluit op uw hoofd en maak ik het passend bij uw gezichtsvorm.
                 <br>Hierop volgt een uitgebreide gebruiks- en onderhoudsinstructie van uw haarwerk. Als u kiest voor een haarwerk op maat, is de levertijd ±12 weken, mocht dit langer duren, dan wordt direct telefonisch contact met u opgenomen.
-                <br>Weet u niet zeker of u een haarwerk nodig heeft (bijvoorbeeld tijdens een chemobehandeling)? Dan bestaat ook de mogelijkheid om een haarwerk te reserveren voor minimaal drie, en maximaal zes weken.
+                <br>Weet u niet zeker of u een haarwerk nodig heeft (bijvoorbeeld tijdens een chemokuur)? Dan bestaat ook de mogelijkheid om een haarwerk te reserveren voor minimaal drie, en maximaal zes weken.
                 </p>
                 <hr>
             </div>
@@ -154,7 +155,7 @@
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/2.jpg" title="Ik zet de haarwerken voor u klaar om te passen" class="swipebox"></a>
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/3.jpg" title="Een nylon mutsje uit hygiënisch oogpunt" class="swipebox"></a>
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/4.jpg" title="Het eerste haarwerk word gepast" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/5.jpg" title="In de haarwerksalon.jpg" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/5.jpg" title="In de haarwerksalon" class="swipebox"></a>
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/6.jpg" title="Een volgende..." class="swipebox"></a>
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/7.jpg" title="Iets totaal anders kan ook worden gepast" class="swipebox"></a>
             <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/8.jpg" title="En de keuze is aan u" class="swipebox"></a>
