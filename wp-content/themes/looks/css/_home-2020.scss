@@ -65,10 +65,27 @@
             background-size: cover;
             background-position: center;
             
+            &.kapsalon-stack {
+                background-image: url('./../img/photography/kapsalon-stack.png');
+            }
+            &.haarwerken-stack {
+                background-image: url('./../img/photography/haarwerken-stack.png');
+            }
+
             @media screen and (max-width: 1024px) {
                 padding-bottom: 45%;
+            
+                &.kapsalon-stack {
+                    background-image: url('./../img/photography/kapsalon-stack-mobile.png');
+                }
+                &.haarwerken-stack {
+                    background-image: url('./../img/photography/haarwerken-stack-mobile.png');
+                }
             }
         }
+
+
+        
 
         h2 {
             margin: 1em 0 -0.4em 0;
@@ -106,15 +123,29 @@
 
 
     #haarwerken-steps {
+        @media screen and (min-width: 1024px) {
+            padding-top: 0.5em; 
+        }
+
         .step {
             display: flex;
             flex-wrap: wrap;
+            padding: 3em;
 
             @media screen and (max-width: 1024px) {
+                padding-bottom: 0;
                 hr { display: none; }
                 &:last-child hr {
                     display: block;
                 }
+
+                &:nth-child(1) { a { background-position: 50% 31% } }
+                &:nth-child(2) { a { background-position: 50% 56% } }
+                &:nth-child(3) { a { background-position: 50% 72% } }
+            }
+
+            @media screen and (max-width: 640px) {
+                padding: 1.5em;
             }
 
             .thumbnail {
@@ -123,7 +154,34 @@
                 width: 35%;
                 background-position: center;
                 background-size: cover;
-                &::after { opacity: 0.7; }
+                box-shadow: -5px 5px 16px -6px rgba(0,0,0,0.7);
+
+                &::after { 
+                    transition: all 120ms ease-in-out;
+                    opacity: 0.7;
+                }
+                
+                &:hover {
+                    &::after { opacity: 0.5; }
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -1.5em;
+                    left: -1.5em;
+                    z-index: -1;
+                    height: 100%;
+                    width: 100%;
+                    background-image: linear-gradient(transparentize($darkblue, 0.2), transparentize($darkblue, 0.2)), url('./../img/photography/salon.jpg');
+                    box-shadow: -5px 5px 16px -6px rgba(0,0,0,0.7);
+
+                    @media screen and (max-width: 640px) {
+                        top: -0.7em;
+                        left: -0.7em;
+                    }
+                }
 
                 @media screen and (max-width: 1024px) {
                     width: 100%;
@@ -154,14 +212,20 @@
                 align-self: flex-start;
                 width: 65%;
                 min-height: 500px;
-                padding: 1em 2em;
-                padding-bottom: 0;
+                padding: 0 2em;
+                padding-left: 3em;
 
                 @media screen and (max-width: 1024px) {
                     width: 100%;
                     min-height: auto;
+                    padding: 0;
+                    padding-top: 3em;
 
                     h2 { margin-top: 0.7em; }
+                }
+
+                h2 {
+                    margin-top: 0;
                 }
 
                 .anko-vergelijker img {
@@ -179,6 +243,10 @@
                     border: none;
                     border-bottom: 1px solid #C4C4C4;
                     
+                    @media screen and (max-width: 1024px) {
+                        width: 100%;
+                        bottom: -1em;
+                    }
                 }
             }
         }

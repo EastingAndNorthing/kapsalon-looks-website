@@ -51,7 +51,7 @@
 
         <div class="col">
             <div class="intro-nav">
-                <a rel="gallery-2" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/kapsalon/2.jpg" class="swipebox preview" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/cutting-med.jpg')"></a>
+                <a rel="gallery-2" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/kapsalon/2.jpg" class="swipebox preview kapsalon-stack"></a>
                 <a rel="gallery-2" href="<?php echo get_template_directory_uri(); ?>/img/photography/kapsalon/1.jpg" class="swipebox"></a>
                 <a rel="gallery-2" href="<?php echo get_template_directory_uri(); ?>/img/photography/kapsalon/3.jpg" class="swipebox"></a>
                 <a rel="gallery-2" href="<?php echo get_template_directory_uri(); ?>/img/photography/kapsalon/4.jpg" class="swipebox"></a>
@@ -77,7 +77,7 @@
         
         <div class="col">
             <div class="intro-nav">
-                <a rel="gallery-3" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/puppets.jpg" class="swipebox preview" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/puppets-med.jpg')"></a>
+                <a rel="gallery-3" title="" href="<?php echo get_template_directory_uri(); ?>/img/photography/puppets.jpg" class="swipebox preview haarwerken-stack"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/1.jpg" class="swipebox"></a>
                 <a rel="gallery-3" href="<?php echo get_template_directory_uri(); ?>/img/photography/haarwerken/2.jpg" class="swipebox"></a>
 
@@ -113,7 +113,7 @@
 
     <section id="haarwerken-steps">
         <div class="step">
-            <a rel="gallery-1" title="Uitleg #1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/preview.jpg')">
+            <a rel="gallery-1" title="Stap 1: intake" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/preview.jpg')">
                 <span class="number">1</span>
             </a>
             <div class="content prettyprint">
@@ -127,18 +127,18 @@
                 <hr>
             </div>
 
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/2.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/3.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/4.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/5.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/6.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/7.jpg" title="Uitleg (valt onder stap 1)" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/2.jpg" title="Intakeformulier" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/3.jpg" title="Kleurenstalen om de juiste kleur te bepalen" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/4.jpg" title="De juiste kleur word bepaald" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/5.jpg" title="Uitgebreid overleg met de klant" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/6.jpg" title="Het binnenwerk van het haarwerk word besproken" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/1/7.jpg" title="De hoofdmaat word gemeten" class="swipebox"></a>
         
         </div>
 
 
         <div class="step">
-            <a rel="gallery-1" title="Uitleg #2" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/puppets-med.jpg')">
+            <a rel="gallery-1" title="Stap 2: ik bestel een selectie confectiehaarwerken voor u" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/puppets-med.jpg')">
                 <span class="number">2</span>
             </a>
             <div class="content prettyprint">
@@ -151,20 +151,20 @@
                 <hr>
             </div>
 
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/2.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/3.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/4.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/5.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/6.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/7.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/8.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/9.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/10.jpg" title="Uitleg (valt onder stap 2)" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/2.jpg" title="Ik zet de haarwerken voor u klaar om te passen" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/3.jpg" title="Een nylon mutsje uit hygiënisch oogpunt" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/4.jpg" title="Het eerste haarwerk word gepast" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/5.jpg" title="In de haarwerksalon.jpg" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/6.jpg" title="Een volgende..." class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/7.jpg" title="Iets totaal anders kan ook worden gepast" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/8.jpg" title="En de keuze is aan u" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/9.jpg" title="De mogelijkheden worden besproken" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/2/10.jpg" title="Onderhoudsproducten voor uw haarwewerk" class="swipebox"></a>
 
         </div>
 
         <div class="step">
-            <a rel="gallery-1" title="Uitleg #3" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/preview.jpg')">
+            <a rel="gallery-1" title="Stap 3: vervolgafspraak voor controle word gepland" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/1.jpg" class="swipebox thumbnail overlay-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/preview.jpg')">
                 <span class="number">3</span>
             </a>
             <div class="content prettyprint">
@@ -177,8 +177,8 @@
                 <hr>
             </div>
 
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/2.jpg" title="Uitleg (valt onder stap 3)" class="swipebox"></a>
-            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/3.jpg" title="Uitleg (valt onder stap 3)" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/2.jpg" title="U mag altijd langskomen met vragen of om productadvies" class="swipebox"></a>
+            <a rel="gallery-1" href="<?php echo get_template_directory_uri(); ?>/img/photography/steps/3/3.jpg" title="Tot ziens!" class="swipebox"></a>
 
         </div>
         

@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 		initialIndexOnArray : 0, // which image index to init when a array is passed
 		hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
 		removeBarsOnMobile : false, // false will show top bar on mobile devices
-		hideBarsDelay : 9999, // delay before hiding bars on desktop
+		hideBarsDelay : false, // delay before hiding bars on desktop
 		videoMaxWidth : 1140, // videos max width
 		beforeOpen: function() {}, // called before opening
 		afterOpen: null, // called after opening
